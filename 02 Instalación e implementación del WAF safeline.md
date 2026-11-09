@@ -12,4 +12,4 @@ sudo mysql_secure_installation
 
 
 
-## huisqxsa
+## huis
