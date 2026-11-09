@@ -11,4 +11,14 @@ La configuración de red consta de 2 máquinas virtuales en conexión modo puent
 </figure>
 
 ## Asignación de hardware virtual
+- **Máquina Ubuntu:** 
+  - vCPU: 2-4
+  - RAM: 6 GB
+  - Almacenamiento: 30 GB VDI
+  - Tipo de conexión: Modo puente 
+- **Kali-Linux:** 
+  - vCPU: 2
+  - RAM: 6 GB
+  - Almacenamiento: 40 GB VDI
+  - Tipo de conexión: Modo puente.
 
