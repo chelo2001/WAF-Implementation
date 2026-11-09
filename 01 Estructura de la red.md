@@ -10,4 +10,5 @@ La configuración de red consta de 2 máquinas virtuales en conexión modo puent
   </figcaption>
 </figure>
 
+## Asignación de hardware virtual
 
