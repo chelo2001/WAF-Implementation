@@ -1,5 +1,6 @@
 ## 1.🌐 Topología y Segmentación de Red
 La configuración de red consta de 2 máquinas virtuales en conexión modo puente: una máquina kali-limux (atacante) y una máquina ubuntu, donde en esta última se estará ejecutando la aplicación web y el WAF. La Figura 1 ilustra esto.
+
 <figure style="margin: 2rem auto; max-width: 700px;">
   <img src="images/diagrama_red_bridge.png"
        alt="Diagrama de red en modo puente: Kali Linux atacante, SafeLine WAF y aplicación web en Ubuntu"
