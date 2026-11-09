@@ -18,4 +18,25 @@ Primero se debe clonar el repositorio de github de la app vulnerable.
 cd /var/www/html
 sudo git clone https://github.com/digininja/DVWA.git
 ```
+Si no se tiene git instalado, se debe instalar con el siguiente comando;
+```bash
+sudo apt-get install -y git
+```
+Ahora se debe cambiar el propietario del directorio DVWA y dejar al usuario www-data. además de otorgarle los permisos necesarios a dicho usuario en ese directorio.
+```bash
+sudo chown -R www-data:www-data DVWA
+sudo chmod -R 755 DVWA
+```
+Ahora se debe editar el archivo de configuración de la aplicación web ubicado en la ruta DVWA/config/config.inc.php y actualizar los valores de las variables a los de la tabla.
 
+<div align="center">
+
+| Variable | Valor |
+|:--------:|:-----:|
+| `$DBMS`  | `MySQL` |
+| `$db`    | `dvwa` |
+| `$user`  | `dvwa_user` |
+| `$pass`  | `p@ssw0rd` |
+| `$host`  | `localhost` |
+
+</div>
