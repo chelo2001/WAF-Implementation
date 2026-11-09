@@ -10,7 +10,7 @@ La configuración de red consta de 2 máquinas virtuales en conexión modo puent
   </figcaption>
 </figure>
 
-## Asignación de hardware virtual
+## 2. Asignación de hardware virtual
 - **Máquina Ubuntu:** 
   - vCPU: 2-4
   - RAM: 6 GB
