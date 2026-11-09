@@ -40,3 +40,17 @@ Ahora se debe editar el archivo de configuración de la aplicación web ubicado 
 | `$host`  | `localhost` |
 
 </div>
+
+Luego se debe crear una nueva base de datos y un nuevo usuario en el servidor de base de datos mysql al que se le otorgarán todos los permisos en la base de datos creada anteriormente (DVWA) y se le concederán a nivel local.
+
+```bash
+sudo mysql -u root -p
+CREATE DATABASE dvwa;
+CREATE USER 'dvwa_user'@'localhost' IDENTIFIED BY 'p@ssw0rd';
+GRANT ALL ON dvwa.* TO 'dvwa_user'@'localhost';
+FLUSH PRIVILEGES;
+exit;
+```
+
+
+
