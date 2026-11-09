@@ -4,6 +4,12 @@ Primero se comenzarán instalando las herramientas necesarias para la implementa
 ```bash
 sudo apt-get install -y apache2 php php-mysql mysql-server
 ```
+Luego se recomienda ejecutar el siguiente comando, el cual permite establecer una contraseña para el usuario root en el servidor de base de datos, además de proporcionar otras capas de seguridad.
 
----
+```bash
+sudo mysql_secure_installation
+```
+
+
+
 ## huisqxsa
