@@ -6,5 +6,4 @@ sudo apt-get install -y apache2 php php-mysql mysql-server
 ```
 
 ---
-d
 ## huisqxsa
