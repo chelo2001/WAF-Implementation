@@ -109,6 +109,8 @@ SafeLine WAF normalmente ofrece un script de instalación automática o un méto
 3. Se proporcionará un usuario y una contraseña de administrador, además de la URL para acceder a SafeLine, normalmente en el puerto 9443.
 4. Una vez que se inicie sesión, se recomienda actualizar a una licencia PRO. Se puede elegir una prueba de 7 días desde https://ly.safepoint.cloud/zfYZD3l, lo que equivale a $1
 
+### Importar los certificados autofirmados al WAF
+
 
 
 
