@@ -77,6 +77,13 @@ INSERT INTO test_users (username, password) VALUES
 ('admin', 'admin123');
 exit;
 ```
+## Creación de certificado SSL para tráfico https
+Se puede crear y hacer uso de un cerificado ssl para cifrado de tráfico http.
+
+```bash
+# Genera una clave privada RSA de 4096 bits y la guarda en el archivo priv.key
+openssl genrsa -out priv.key 4096[cite: 2]
+```
 
 
 
