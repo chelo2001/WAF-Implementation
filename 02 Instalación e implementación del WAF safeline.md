@@ -51,6 +51,8 @@ GRANT ALL ON dvwa.* TO 'dvwa_user'@'localhost';
 FLUSH PRIVILEGES;
 exit;
 ```
+Ahora se debe navegar a http://<Ubuntu IP>/DVWA/setup.php y clickear en resetear base de datos.
+
 
 
 
