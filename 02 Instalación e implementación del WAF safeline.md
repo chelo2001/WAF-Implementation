@@ -84,6 +84,10 @@ Se puede crear y hacer uso de un cerificado ssl para cifrado de tráfico http.
 # Genera una clave privada RSA de 4096 bits y la guarda en el archivo priv.key
 openssl genrsa -out priv.key 4096[cite: 2]
 ```
+```bash
+# Genera una Solicitud de Firma de Certificado (CSR) utilizando la clave privada existente (priv.key) y la guarda en el archivo priv.csr
+openssl req -new -key priv.key -out priv.csr[cite: 3]
+```
 
 
 
