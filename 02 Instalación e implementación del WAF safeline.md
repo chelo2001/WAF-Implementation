@@ -94,6 +94,20 @@ Luego se genera un certificado autofirmado con los dos archivos generados anteri
 # Genera un certificado autofirmado (priv.crt) válido por 365 días a partir de la solicitud (priv.csr) usando la clave privada (priv.key)
 openssl x509 -req -days 365 -in priv.csr -signkey priv.key -out priv.crt[cite: 4]
 ```
+## Instalación y configuración del WAF
+Ingresar al siguiente sitio web https://ly.safepoint.cloud/zfYZD3l y selecciona **"Install"** (Instalar).
+
+SafeLine WAF normalmente ofrece un script de instalación automática o un método de instalación manual. Sigue estos pasos para la instalación automática:
+
+1. Ejecuta el siguiente comando en la línea de comandos de Ubuntu:
+
+   ```bash
+   bash -c "$(curl -fsSLk https://waf.chaitin.com/release/latest/manager.sh)" -- --en
+   ```
+
+2. Sigue las indicaciones en pantalla para completar la instalación.
+3. Se te proporcionará un usuario y una contraseña de administrador, además de la URL para acceder a SafeLine, normalmente en el puerto 9443.
+4. Una vez que inicies sesión, se recomienda actualizar a una licencia PRO. Puedes elegir una prueba de 7 días desde https://ly.safepoint.cloud/zfYZD3l, lo que equivale a
 
 
 
