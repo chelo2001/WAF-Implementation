@@ -53,6 +53,36 @@ exit;
 ```
 Ahora se debe navegar a http://<Ubuntu IP>/DVWA/setup.php y clickear en resetear base de datos.
 
+## Cambiar el puerto de escucha de la aplicación web
+Por defecto, el servidor Apache escucha conexiones en el puerto 80, por lo que se debe cambiar el puerto de escucha para dejar libre ese puerto para que el waf pueda recibir las peticiones http. Esto se puede hacer modificando el archivo /etc/apache2/ports.conf y cambiar de Listen 80 a Listen 8080. Luego se debe modificar el archivo /etc/apache2/sites-available/000-default.conf y dejar configurado <VirtualHost *:8080>. Por último, se debe reiniciar apache con el comando sudo systemctl restart apache2 para que se aplique la configuración anterior.
+
+## Añadir valores personalizados a la base de datos de la aplicación web
+Se pueden añadir valores de usuario y contraseña a la base de datos iniciando sesión con el usuario root y entrando a la base de datos creada DVWA.
+```bash
+sudo mysql -u root -p
+USE dvwa;
+```
+Luego se pueden añadir los valores,
+
+```bash
+CREATE TABLE test_users (
+id INT NOT NULL AUTO_INCREMENT,
+username VARCHAR(50) NOT NULL,
+password VARCHAR(50) NOT NULL,
+PRIMARY KEY (id)
+);
+INSERT INTO test_users (username, password) VALUES
+('alice', 'alice123'),
+('bob', 'bob123'),
+('admin', 'admin123');
+exit;
+```
+
+
+
+
+
+
 
 
 
