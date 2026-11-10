@@ -78,15 +78,21 @@ INSERT INTO test_users (username, password) VALUES
 exit;
 ```
 ## Creación de certificado SSL para tráfico https
-Se puede crear y hacer uso de un cerificado ssl para cifrado de tráfico http.
+Se puede crear y hacer uso de un cerificado ssl para cifrado de tráfico http. Para ello primero se crea una clave privada RSA.
 
 ```bash
 # Genera una clave privada RSA de 4096 bits y la guarda en el archivo priv.key
 openssl genrsa -out priv.key 4096[cite: 2]
 ```
+Luego se genera una solicitud de firma de certificado con dicha clave privada.
 ```bash
 # Genera una Solicitud de Firma de Certificado (CSR) utilizando la clave privada existente (priv.key) y la guarda en el archivo priv.csr
 openssl req -new -key priv.key -out priv.csr[cite: 3]
+```
+Luego se genera un certificado autofirmado con los dos archivos generados anteriormente.
+```bash
+# Genera un certificado autofirmado (priv.crt) válido por 365 días a partir de la solicitud (priv.csr) usando la clave privada (priv.key)
+openssl x509 -req -days 365 -in priv.csr -signkey priv.key -out priv.crt[cite: 4]
 ```
 
 
