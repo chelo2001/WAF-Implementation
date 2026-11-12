@@ -120,6 +120,8 @@ Para que el tráfico hacia la página web viaje por https, se deben importar el 
 
 </div>
 
+### Añadir la aplicación web vulnerable al WAF
+Para añadir la aplicación web al WAF, se debe ir a la opción de Applications en el WAF y seleccionar la opción de Add application tal como se muestra en la figura 2.
 
 
 
