@@ -136,9 +136,11 @@ Luego de eso, se debe rellenar con la siguiente información.
 
 <img src="images/configuración_app_web.jpg" alt="Ventana Add Cert de SafeLine con los campos SSL Cert, Upload Cert File, Private key y Submit resaltados" width="400">
 
-<p><em>Figura 1. Ventana "Add Cert" de SafeLine WAF: (1) SSL Cert, (2) Upload Cert File, (3) Private key y (4) Submit.</em></p>
+<p><em>Figura 3. Configuración requerida para añadir la aplicación web al WAF y que este actúe como proxy.</em></p>
 
 </div>
+
+En la configuración que se muestra en la imagen, se agrega el puerto 443 de escucha en el WAF, lo cual permite que este actúe como proxy que interceptará el tráfico http para posteriormente redirigir ese tráfico al back-end en el puerto 8080 configurado anteriormente como puerto de escucha del servidor web. También se añade el certificado SSL creado anteriormente con la herramineta openssl (lo cual permitirá tráfico cifrado conTLS) y se añade también el dominio creado para resolución vía DNS en el archivo /etc/hosts (webserver.thesocialdork).
 
 
 
