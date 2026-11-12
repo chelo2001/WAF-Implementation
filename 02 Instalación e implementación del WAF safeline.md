@@ -110,6 +110,9 @@ SafeLine WAF normalmente ofrece un script de instalación automática o un méto
 4. Una vez que se inicie sesión, se recomienda actualizar a una licencia PRO. Se puede elegir una prueba de 7 días desde https://ly.safepoint.cloud/zfYZD3l, lo que equivale a $1
 
 ### Importar los certificados autofirmados al WAF
+Para que el tráfico hacia la página web viaje por https, se deben importar el archivo de certificado y el archivo clave generados anteriormente. para eso basta con copiar el contenido de los siguientes archivos /etc/ssl/dvwa/dvwa.crt y /etc/ssl/dvwa/dvwa.key en la ruta Settings -> SSL Cert -> Add Cert y añadir cada contenido de esos archivos en las casillas que se muestran en la figura 2. 
+
+
 
 
 
