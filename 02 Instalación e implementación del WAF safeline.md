@@ -132,7 +132,13 @@ Para añadir la aplicación web al WAF, se debe ir a la opción de Applications 
 </div>
 
 Luego de eso, se debe rellenar con la siguiente información.
+<div align="center">
 
+<img src="images/configuración_app_web.jpg" alt="Ventana Add Cert de SafeLine con los campos SSL Cert, Upload Cert File, Private key y Submit resaltados" width="400">
+
+<p><em>Figura 1. Ventana "Add Cert" de SafeLine WAF: (1) SSL Cert, (2) Upload Cert File, (3) Private key y (4) Submit.</em></p>
+
+</div>
 
 
 
