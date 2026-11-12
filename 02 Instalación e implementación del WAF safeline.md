@@ -123,6 +123,15 @@ Para que el tráfico hacia la página web viaje por https, se deben importar el 
 ### Añadir la aplicación web vulnerable al WAF
 Para añadir la aplicación web al WAF, se debe ir a la opción de Applications en el WAF y seleccionar la opción de Add application tal como se muestra en la figura 2.
 
+<div align="center">
+
+<img src="images/add_application.jpg" alt="Ventana Add Cert de SafeLine con los campos SSL Cert, Upload Cert File, Private key y Submit resaltados" width="400">
+
+<p><em>Figura 2: Interfaz web de WAF safeline.</em></p>
+
+</div>
+
+
 
 
 
