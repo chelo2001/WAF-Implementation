@@ -131,6 +131,7 @@ Para añadir la aplicación web al WAF, se debe ir a la opción de Applications 
 
 </div>
 
+Luego de eso, se debe rellenar con la siguiente información.
 
 
 
