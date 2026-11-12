@@ -112,7 +112,13 @@ SafeLine WAF normalmente ofrece un script de instalación automática o un méto
 ### Importar los certificados autofirmados al WAF
 Para que el tráfico hacia la página web viaje por https, se deben importar el archivo de certificado y el archivo clave generados anteriormente. para eso basta con copiar el contenido de los siguientes archivos /etc/ssl/dvwa/dvwa.crt y /etc/ssl/dvwa/dvwa.key en la ruta Settings -> SSL Cert -> Add Cert y añadir cada contenido de esos archivos en las casillas que se muestran en la figura 2. 
 
+<div align="center">
 
+<img src="images/safeline_add_cert.png" alt="Ventana Add Cert de SafeLine con los campos SSL Cert, Upload Cert File, Private key y Submit resaltados" width="400">
+
+<p><em>Figura 1. Ventana "Add Cert" de SafeLine WAF: (1) SSL Cert, (2) Upload Cert File, (3) Private key y (4) Submit.</em></p>
+
+</div>
 
 
 
