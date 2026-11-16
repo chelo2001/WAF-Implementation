@@ -1,4 +1,4 @@
-<img width="1043" height="530" alt="image" src="https://github.com/user-attachments/assets/315e50c4-30a0-4cfe-b4f8-f7e35eb273b0" />## Implementación de reglas en el WAF y comprobación
+## Implementación de reglas en el WAF y comprobación
 En esta sección se nombrarán las reglas configuradas en en WAF junto con la comprobación de la aplicación de dichas reglass al ejecutar pruebas en la aplicación web vulnerable.
 
 #### Protección de limitación de tasa
