@@ -36,7 +36,13 @@ También es posible configurar un método de autenticación por credenciales ant
   <em>Figura 4. Formulario "Add user" con los campos de configuración resaltados en rojo.</em>
 </p>
 
-Se puede aplicar ese método de autenticación en la aplicación web dirigiéndose a la opción Auth dentro de la aplicación web añadida anteriormente
+Se puede aplicar ese método de autenticación en la aplicación web dirigiéndose a la opción Auth dentro de la aplicación web añadida anteriormente.
+
+<p align="center">
+  <img src="images/safeline_auth_resaltado.png" alt="Panel Applications de SafeLine WAF con la opción Auth resaltada en rojo" width="800">
+  <br>
+  <em>Figura 5. Panel "Applications" de SafeLine WAF con la opción Auth resaltada en rojo.</em>
+</p>
 
 
 
