@@ -12,6 +12,13 @@ Se comenzará implementando un límite de peticiones para una misma IP de origen
 
 Ahora, al implementar la regla, se puede entrar a la aplicación web configurada y probar seleccionar varios apartados de ella. Cuando se seleccionan 2 apartados aparece la siguiente advertencia.
 
+<p align="center">
+  <img src="images/access_forbidden_resaltado.png" alt="Página de bloqueo de SafeLine WAF con los elementos principales resaltados" width="700">
+  <br>
+  <em>Figura 2. Página de bloqueo "Access Forbidden" mostrada por SafeLine WAF.</em>
+</p>
+
+
 
 
 
