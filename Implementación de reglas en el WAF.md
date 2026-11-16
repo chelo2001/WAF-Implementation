@@ -1,4 +1,4 @@
-## Implementación de reglas en el WAF y comprobación
+<img width="1043" height="530" alt="image" src="https://github.com/user-attachments/assets/315e50c4-30a0-4cfe-b4f8-f7e35eb273b0" />## Implementación de reglas en el WAF y comprobación
 En esta sección se nombrarán las reglas configuradas en en WAF junto con la comprobación de la aplicación de dichas reglass al ejecutar pruebas en la aplicación web vulnerable.
 
 #### Protección de limitación de tasa
@@ -45,5 +45,14 @@ Se puede aplicar ese método de autenticación en la aplicación web dirigiéndo
 </p>
 
 Luego, dentro de esa opción se debe habilitar Auth y elegir el método de autenticación, que en este caso se eligió el método de credenciales. También es posible seleccionar condiciones tales como la ip de las máquinas a las que se les solicitará autenticación. En este caso se seleccionó esa opción y se ingresó la IP de la máquina kali tal como se muestra en la figura 6.
+
+<p align="center">
+  <img src="auth_config_resaltado.png" alt="Ventana de configuración Auth de SafeLine WAF con las opciones activas resaltadas en rojo" width="750">
+  <br>
+  <em>Figura 6. Configuración del módulo Auth en SafeLine WAF con las opciones activas resaltadas en rojo.</em>
+</p>
+
+
+
 
 
