@@ -10,6 +10,8 @@ Se comenzará implementando un límite de peticiones para una misma IP de origen
   <em>Figura 1. Ventana "Edit rules" con los parámetros de la regla resaltados en rojo.</em>
 </p>
 
+Ahora, al implementar la regla, se puede entrar a la aplicación web configurada y probar seleccionar varios apartados de ella. Cuando se seleccionan 2 apartados aparece la siguiente advertencia.
+
 
 
 
