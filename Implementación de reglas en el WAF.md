@@ -36,7 +36,7 @@ También es posible configurar un método de autenticación por credenciales ant
   <em>Figura 4. Formulario "Add user" con los campos de configuración resaltados en rojo.</em>
 </p>
 
-
+Se puede aplicar ese método de autenticación en la aplicación web dirigiéndose a la opción Auth dentro de la aplicación web añadida anteriormente
 
 
 
