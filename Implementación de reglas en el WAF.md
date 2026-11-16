@@ -47,7 +47,7 @@ Se puede aplicar ese método de autenticación en la aplicación web dirigiéndo
 Luego, dentro de esa opción se debe habilitar Auth y elegir el método de autenticación, que en este caso se eligió el método de credenciales. También es posible seleccionar condiciones tales como la ip de las máquinas a las que se les solicitará autenticación. En este caso se seleccionó esa opción y se ingresó la IP de la máquina kali tal como se muestra en la figura 6.
 
 <p align="center">
-  <img src="auth_config_resaltado.png" alt="Ventana de configuración Auth de SafeLine WAF con las opciones activas resaltadas en rojo" width="750">
+  <img src="images/auth_config_resaltado.png" alt="Ventana de configuración Auth de SafeLine WAF con las opciones activas resaltadas en rojo" width="750">
   <br>
   <em>Figura 6. Configuración del módulo Auth en SafeLine WAF con las opciones activas resaltadas en rojo.</em>
 </p>
