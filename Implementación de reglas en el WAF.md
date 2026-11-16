@@ -20,6 +20,12 @@ Ahora, al implementar la regla, se puede entrar a la aplicación web configurada
 
 Luego, al ingresar a la interfaz del WAF, se verá en los registros que la ip de la máquina kali fue bloqueada.
 
+<p align="center">
+  <img src="images/safeline_rate_limiting_resaltado.png" alt="Panel Rate Limiting de SafeLine WAF con la IP 192.168.100.73 bloqueada durante 5 minutos" width="800">
+  <br>
+  <em>Figura 3. Registro de Rate Limiting en SafeLine WAF con la IP bloqueada resaltada en rojo.</em>
+</p>
+
 
 
 
