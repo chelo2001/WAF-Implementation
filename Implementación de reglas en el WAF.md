@@ -18,6 +18,8 @@ Ahora, al implementar la regla, se puede entrar a la aplicación web configurada
   <em>Figura 2. Página de bloqueo "Access Forbidden" mostrada por SafeLine WAF.</em>
 </p>
 
+Luego, al ingresar a la interfaz del WAF, se verá en los registros que la ip de la máquina kali fue bloqueada.
+
 
 
 
