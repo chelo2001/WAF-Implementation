@@ -27,6 +27,10 @@ Luego, al ingresar a la interfaz del WAF, se verá en los registros que la ip de
 </p>
 
 
+### Método de autenticación por contraseña para ingreso en la aplicación web
+También es posible configurar un método de autenticación por credenciales antes de que el waf redirija la petición al servidor back-end. esto se hace en las opciones Auth-> Settings -> Add User en el waf. En este caso se añadieron las credenciales admin-password solo para fines de prueba.
+
+
 
 
 
