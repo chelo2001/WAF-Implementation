@@ -96,6 +96,12 @@ La aplicación web que se implementó (DVWA) se hizo vulnerable a propósito con
 
 Sin embargo, si desactivamos la regla de protección contra inyecciones SQL en el WAF en Applications -> Attacks, como se muestra en la figura 12. la inyección SQL funcionará y se revelarán los datos de la base de datos configurada para aplicación web, tal como se muestra en la figura 13.
 
+<p align="center">
+  <img src="images/attacks_semantic_resaltado.png" alt="Ventana Attacks de SafeLine WAF con Semantic Analysis personalizado y los modos de cada módulo resaltados en rojo" width="750">
+  <br>
+  <em>Figura 12. Configuración de Semantic Analysis por módulo en SafeLine WAF.</em>
+</p>
+
 
 
 
