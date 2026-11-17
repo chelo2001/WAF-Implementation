@@ -83,7 +83,7 @@ Lo que confirma que la regla se aplicó correctamente.
 La aplicación web que se implementó (DVWA) se hizo vulnerable a propósito con el fin de aprender las diferentes técnicas de pentesting en aplicaciones web. Sin embargo, debido a que el WAF por defecto trae protección contra diferentes tipos de ataques de inyección, al intentar realizar una inyección sql en un campo de inyección (ver figura 10), el WAF no permitirá el envió al back-end. Tal como se ilustra en la figura 11. que despúes de intentar una inyección, apareció un aviso de que el WAF bloqueó el acceso. 
 
 <p align="center">
-  <img src="images/dvwa_sqli_resaltado(1).png" alt="Módulo SQL Injection de DVWA con el menú, el título y el campo User ID resaltados en rojo" width="700">
+  <img src="images/dvwa_sqli_resaltado (1).png" alt="Módulo SQL Injection de DVWA con el menú, el título y el campo User ID resaltados en rojo" width="700">
   <br>
   <em>Figura 10. Módulo "SQL Injection" de DVWA con el campo de entrada resaltado en rojo.</em>
 </p>
