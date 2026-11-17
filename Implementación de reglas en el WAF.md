@@ -52,6 +52,9 @@ Luego, dentro de esa opción se debe habilitar Auth y elegir el método de auten
   <em>Figura 6. Configuración del módulo Auth en SafeLine WAF con las opciones activas resaltadas en rojo.</em>
 </p>
 
+Si ahora se navega hacia la aplicación web, se verá una pestaña como la siguiente, donde el WAF solo solicitará la página en el back-end si se proporcionan las credenciales correctas (las que se configuraron anteriormente).
+
+
 
 
 
