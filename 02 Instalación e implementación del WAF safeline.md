@@ -1,4 +1,4 @@
-## Instalación de herrammientas
+## 1. Instalación de herrammientas
 Primero se comenzarán instalando las herramientas necesarias para la implementación del servidor web. En este caso se utilizará un servior web apache, por lo que se requerirá instalar dicho servidor, el lenguaje de back-end a utilizar (php en este caso), los conectores para la comunicación entre el lenguaje de programación y la base de datos y el propio servidor de base de datos. Esto se hace con el siguiente comando.
 
 ```bash
@@ -12,7 +12,7 @@ sudo mysql_secure_installation
 
 
 
-## Configuración de la aplicación web vulnerable
+## 2. Configuración de la aplicación web vulnerable
 Primero se debe clonar el repositorio de github de la app vulnerable.
 ```bash
 cd /var/www/html
@@ -53,10 +53,10 @@ exit;
 ```
 Ahora se debe navegar a http://<Ubuntu IP>/DVWA/setup.php y clickear en resetear base de datos.
 
-## Cambiar el puerto de escucha de la aplicación web
+## 3. Cambiar el puerto de escucha de la aplicación web
 Por defecto, el servidor Apache escucha conexiones en el puerto 80, por lo que se debe cambiar el puerto de escucha para dejar libre ese puerto para que el waf pueda recibir las peticiones http. Esto se puede hacer modificando el archivo /etc/apache2/ports.conf y cambiar de Listen 80 a Listen 8080. Luego se debe modificar el archivo /etc/apache2/sites-available/000-default.conf y dejar configurado <VirtualHost *:8080>. Por último, se debe reiniciar apache con el comando sudo systemctl restart apache2 para que se aplique la configuración anterior.
 
-## Añadir valores personalizados a la base de datos de la aplicación web
+## 4. Añadir valores personalizados a la base de datos de la aplicación web
 Se pueden añadir valores de usuario y contraseña a la base de datos iniciando sesión con el usuario root y entrando a la base de datos creada DVWA.
 ```bash
 sudo mysql -u root -p
@@ -77,7 +77,7 @@ INSERT INTO test_users (username, password) VALUES
 ('admin', 'admin123');
 exit;
 ```
-## Creación de certificado SSL para tráfico https
+## 5. Creación de certificado SSL para tráfico https
 Se puede crear y hacer uso de un cerificado ssl para cifrado de tráfico http. Para ello primero se crea una clave privada RSA.
 
 ```bash
@@ -94,7 +94,7 @@ Luego se genera un certificado autofirmado con los dos archivos generados anteri
 # Genera un certificado autofirmado (priv.crt) válido por 365 días a partir de la solicitud (priv.csr) usando la clave privada (priv.key)
 openssl x509 -req -days 365 -in priv.csr -signkey priv.key -out priv.crt[cite: 4]
 ```
-## Instalación y configuración del WAF
+## 6. Instalación y configuración del WAF
 Ingresar al siguiente sitio web https://ly.safepoint.cloud/zfYZD3l y selecciona **"Install"** (Instalar).
 
 SafeLine WAF normalmente ofrece un script de instalación automática o un método de instalación manual. Seguir estos pasos para la instalación automática:
@@ -109,7 +109,7 @@ SafeLine WAF normalmente ofrece un script de instalación automática o un méto
 3. Se proporcionará un usuario y una contraseña de administrador, además de la URL para acceder a SafeLine, normalmente en el puerto 9443.
 4. Una vez que se inicie sesión, se recomienda actualizar a una licencia PRO. Se puede elegir una prueba de 7 días desde https://ly.safepoint.cloud/zfYZD3l, lo que equivale a $1
 
-### Importar los certificados autofirmados al WAF
+### 7. Importar los certificados autofirmados al WAF
 Para que el tráfico hacia la página web viaje por https, se deben importar el archivo de certificado y el archivo clave generados anteriormente. para eso basta con copiar el contenido de los siguientes archivos /etc/ssl/dvwa/dvwa.crt y /etc/ssl/dvwa/dvwa.key en la ruta Settings -> SSL Cert -> Add Cert y añadir cada contenido de esos archivos en las casillas que se muestran en la figura 2. 
 
 <div align="center">
@@ -120,7 +120,7 @@ Para que el tráfico hacia la página web viaje por https, se deben importar el 
 
 </div>
 
-### Añadir la aplicación web vulnerable al WAF
+### 8. Añadir la aplicación web vulnerable al WAF
 Para añadir la aplicación web al WAF, se debe ir a la opción de Applications en el WAF y seleccionar la opción de Add application tal como se muestra en la figura 2.
 
 <div align="center">
