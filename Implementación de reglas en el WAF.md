@@ -88,6 +88,13 @@ La aplicación web que se implementó (DVWA) se hizo vulnerable a propósito con
   <em>Figura 10. Módulo "SQL Injection" de DVWA con el campo de entrada resaltado en rojo.</em>
 </p>
 
+<p align="center">
+  <img src="images/access_forbidden_deny_resaltado.png" alt="Página de bloqueo Access Forbidden de SafeLine WAF con identificador de evento, resaltada en rojo oscuro" width="700">
+  <br>
+  <em>Figura 11. Página "Access Forbidden" mostrada por SafeLine WAF al aplicarse la regla de denegación tras la inyección SQL.</em>
+</p>
+
+Sin embargo, si desactivamos la regla de protección contra inyecciones SQL en el WAF en Applications -> Attacks, como se muestra en la figura 12. la inyección SQL funcionará y se revelarán los datos de la base de datos configurada para aplicación web, tal como se muestra en la figura 13.
 
 
 
