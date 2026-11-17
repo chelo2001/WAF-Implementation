@@ -63,6 +63,12 @@ Si ahora se navega hacia la aplicación web, se verá una pestaña como la sigui
 ### Configuración de regla personalizada
 También es posible configurar reglas personalizadas en el WAF en la sección de Allow and Deny -> Custom Rules. En este caso se añadió una regla simple de denegación por IP como se ilustra en la figura 8. Sin embargo, es posible seguir añadiendo condicionales a la regla en base a lo que se requiera.
 
+<p align="center">
+  <img src="images/add_rules_deny_resaltado.png" alt="Ventana Add rules de SafeLine WAF con la regla Deny kali-deny y sus configuraciones resaltadas en rojo" width="750">
+  <br>
+  <em>Figura 8. Creación de la regla de denegación "kali-deny" en SafeLine WAF.</em>
+</p>
+ 
 
 
 
