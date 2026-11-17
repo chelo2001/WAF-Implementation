@@ -70,7 +70,18 @@ También es posible configurar reglas personalizadas en el WAF en la sección de
 </p>
 
  Ahora si se intenta acceder a la aplicación web, se verá algo como esto.
- 
+
+ <p align="center">
+  <img src="images/access_forbidden_deny_resaltado.png" alt="Página de bloqueo Access Forbidden de SafeLine WAF con identificador de evento, resaltada en rojo oscuro" width="700">
+  <br>
+  <em>Figura 9. Página "Access Forbidden" mostrada por SafeLine WAF al aplicarse la regla de denegación.</em>
+</p>
+
+Lo que confirma que la regla se aplicó correctamente.
+
+### Protección del WAF contra SQL injection
+La aplicación web que se implementó (DVWA) se hizo vulnerable a propósito con el fin de aprender las diferentes técnicas de pentesting en aplicaciones web. Sin embargo, debido a que el WAF por defecto trae protección contra diferentes tipos de ataques de inyección, al intentar realizar una inyección sql en un campo de inyección, el WAF no permitirá el envió al back-end. Tal como se ilustra en la figura 10. que despúes de intentar una inyección, apareció un aviso de que el WAF bloqueó el acceso.
+
 
 
 
