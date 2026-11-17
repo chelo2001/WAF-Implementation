@@ -1,7 +1,7 @@
-## Implementación de reglas en el WAF y comprobación
+## 1. Implementación de reglas en el WAF y comprobación
 En esta sección se nombrarán las reglas configuradas en en WAF junto con la comprobación de la aplicación de dichas reglass al ejecutar pruebas en la aplicación web vulnerable.
 
-#### Protección de limitación de tasa
+#### 1.1 Protección de limitación de tasa
 Se comenzará implementando un límite de peticiones para una misma IP de origen. La figura 1 muestra la regla implementada en el WAF para que una IP se bloquee por 5 minutos tras 3 peticiones en la páquina web en menos de 10 segundos. Para esto se debe ir a la sección de HTTP Flood -> Access Limiting del WAF.
 
 <p align="center">
@@ -27,7 +27,7 @@ Luego, al ingresar a la interfaz del WAF, se verá en los registros que la ip de
 </p>
 
 
-### Método de autenticación por contraseña para ingreso en la aplicación web
+### 1.2 Método de autenticación por contraseña para ingreso en la aplicación web
 También es posible configurar un método de autenticación por credenciales antes de que el waf redirija la petición al servidor back-end. esto se hace en las opciones Auth-> Settings -> Add User en el waf. En este caso se añadieron las credenciales admin-password solo para fines de prueba.
 
 <p align="center">
@@ -60,7 +60,7 @@ Si ahora se navega hacia la aplicación web, se verá una pestaña como la sigui
   <em>Figura 7. Página de autenticación "Sign In - Password" de SafeLine WAF.</em>
 </p>
 
-### Configuración de regla personalizada
+### 1.3 Configuración de regla personalizada
 También es posible configurar reglas personalizadas en el WAF en la sección de Allow and Deny -> Custom Rules. En este caso se añadió una regla simple de denegación por IP como se ilustra en la figura 8. Sin embargo, es posible seguir añadiendo condicionales a la regla en base a lo que se requiera.
 
 <p align="center">
@@ -79,7 +79,7 @@ También es posible configurar reglas personalizadas en el WAF en la sección de
 
 Lo que confirma que la regla se aplicó correctamente.
 
-### Protección del WAF contra SQL injection
+### 1.4 Protección del WAF contra SQL injection
 La aplicación web que se implementó (DVWA) se hizo vulnerable a propósito con el fin de aprender las diferentes técnicas de pentesting en aplicaciones web. Sin embargo, debido a que el WAF por defecto trae protección contra diferentes tipos de ataques de inyección, al intentar realizar una inyección sql en un campo de inyección (ver figura 10), el WAF no permitirá el envió al back-end. Tal como se ilustra en la figura 11. que despúes de intentar una inyección, apareció un aviso de que el WAF bloqueó el acceso. 
 
 <p align="center">
@@ -94,7 +94,7 @@ La aplicación web que se implementó (DVWA) se hizo vulnerable a propósito con
   <em>Figura 11. Página "Access Forbidden" mostrada por SafeLine WAF al aplicarse la regla de denegación tras la inyección SQL.</em>
 </p>
 
-Sin embargo, si desactivamos la regla de protección contra inyecciones SQL en el WAF en Applications -> Attacks, como se muestra en la figura 12. la inyección SQL funcionará y se revelarán los datos de la base de datos configurada para aplicación web, tal como se muestra en la figura 13.
+Sin embargo, si se desactiva la regla de protección contra inyecciones SQL en el WAF en Applications -> Attacks, como se muestra en la figura 12. la inyección SQL funcionará y se revelarán los datos de la base de datos configurada para aplicación web, tal como se muestra en la figura 13.
 
 <p align="center">
   <img src="images/attacks_semantic_resaltado.png" alt="Ventana Attacks de SafeLine WAF con Semantic Analysis personalizado y los modos de cada módulo resaltados en rojo" width="750">
