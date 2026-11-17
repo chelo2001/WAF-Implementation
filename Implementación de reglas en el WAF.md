@@ -102,6 +102,11 @@ Sin embargo, si desactivamos la regla de protección contra inyecciones SQL en e
   <em>Figura 12. Configuración de Semantic Analysis por módulo en SafeLine WAF.</em>
 </p>
 
+<p align="center">
+  <img src="images/dvwa_sqli_resultado_resaltado.png" alt="Módulo SQL Injection de DVWA mostrando los cinco usuarios devueltos por la consulta, resaltados en rojo" width="700">
+  <br>
+  <em>Figura 12. Resultado de la prueba de inyección SQL en DVWA con el WAF sin bloquear la petición.</em>
+</p>
 
 
 
