@@ -54,6 +54,15 @@ Luego, dentro de esa opción se debe habilitar Auth y elegir el método de auten
 
 Si ahora se navega hacia la aplicación web, se verá una pestaña como la siguiente, donde el WAF solo solicitará la página en el back-end si se proporcionan las credenciales correctas (las que se configuraron anteriormente).
 
+<p align="center">
+  <img src="images/safeline_signin_password.png" alt="Página Sign In - Password de SafeLine WAF con campos de usuario y contraseña" width="800">
+  <br>
+  <em>Figura 7. Página de autenticación "Sign In - Password" de SafeLine WAF.</em>
+</p>
+
+### Configuración de regla personalizada
+También es posible configurar reglas personalizadas en el WAF en la sección de Allow and Deny -> Custom Rules. En este caso se añadió una regla simple de denegación por IP como se ilustra en la figura 8. Sin embargo, es posible seguir añadiendo condicionales a la regla en base a lo que se requiera.
+
 
 
 
