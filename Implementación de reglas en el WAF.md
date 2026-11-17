@@ -80,7 +80,9 @@ También es posible configurar reglas personalizadas en el WAF en la sección de
 Lo que confirma que la regla se aplicó correctamente.
 
 ### Protección del WAF contra SQL injection
-La aplicación web que se implementó (DVWA) se hizo vulnerable a propósito con el fin de aprender las diferentes técnicas de pentesting en aplicaciones web. Sin embargo, debido a que el WAF por defecto trae protección contra diferentes tipos de ataques de inyección, al intentar realizar una inyección sql en un campo de inyección, el WAF no permitirá el envió al back-end. Tal como se ilustra en la figura 10. que despúes de intentar una inyección, apareció un aviso de que el WAF bloqueó el acceso.
+La aplicación web que se implementó (DVWA) se hizo vulnerable a propósito con el fin de aprender las diferentes técnicas de pentesting en aplicaciones web. Sin embargo, debido a que el WAF por defecto trae protección contra diferentes tipos de ataques de inyección, al intentar realizar una inyección sql en un campo de inyección, el WAF no permitirá el envió al back-end. Tal como se ilustra en la figura 10. que despúes de intentar una inyección, apareció un aviso de que el WAF bloqueó el acceso. 
+
+
 
 
 
