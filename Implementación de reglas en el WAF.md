@@ -68,8 +68,9 @@ También es posible configurar reglas personalizadas en el WAF en la sección de
   <br>
   <em>Figura 8. Creación de la regla de denegación "kali-deny" en SafeLine WAF.</em>
 </p>
- 
 
+ Ahora si se intenta acceder a la aplicación web, se verá algo como esto.
+ 
 
 
 
