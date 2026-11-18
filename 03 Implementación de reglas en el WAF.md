@@ -7,7 +7,7 @@ Se comenzará implementando un límite de peticiones para una misma IP de origen
 <p align="center">
   <img src="images/edit_rules_resaltado.png" alt="Ventana Edit rules con los parámetros Duration, Access, Action y Block resaltados en rojo" width="700">
   <br>
-  <em>Figura 1. Ventana "Edit rules" con los parámetros de la regla resaltados en rojo.</em>
+  <em>Figura 1. Ventana "Edit rules".</em>
 </p>
 
 Ahora, al implementar la regla, se puede entrar a la aplicación web configurada y probar seleccionar varios apartados de ella. Cuando se seleccionan 2 apartados aparece la siguiente advertencia.
@@ -23,7 +23,7 @@ Luego, al ingresar a la interfaz del WAF, se verá en los registros que la ip de
 <p align="center">
   <img src="images/safeline_rate_limiting_resaltado.png" alt="Panel Rate Limiting de SafeLine WAF con la IP 192.168.100.73 bloqueada durante 5 minutos" width="800">
   <br>
-  <em>Figura 3. Registro de Rate Limiting en SafeLine WAF con la IP bloqueada resaltada en rojo.</em>
+  <em>Figura 3. Registro de Rate Limiting en SafeLine WAF con la IP bloqueada.</em>
 </p>
 
 
@@ -33,7 +33,7 @@ También es posible configurar un método de autenticación por credenciales ant
 <p align="center">
   <img src="images/add_user_resaltado.png" alt="Formulario Add user con los campos Username, Password, Email, teléfono y Force Enable TOTP resaltados en rojo" width="600">
   <br>
-  <em>Figura 4. Formulario "Add user" con los campos de configuración resaltados en rojo.</em>
+  <em>Figura 4. Formulario "Add user" con los campos de configuración.</em>
 </p>
 
 Se puede aplicar ese método de autenticación en la aplicación web dirigiéndose a la opción Auth dentro de la aplicación web añadida anteriormente.
@@ -41,7 +41,7 @@ Se puede aplicar ese método de autenticación en la aplicación web dirigiéndo
 <p align="center">
   <img src="images/safeline_auth_resaltado.png" alt="Panel Applications de SafeLine WAF con la opción Auth resaltada en rojo" width="800">
   <br>
-  <em>Figura 5. Panel "Applications" de SafeLine WAF con la opción Auth resaltada en rojo.</em>
+  <em>Figura 5. Panel "Applications" de SafeLine WAF con la opción Auth.</em>
 </p>
 
 Luego, dentro de esa opción se debe habilitar Auth y elegir el método de autenticación, que en este caso se eligió el método de credenciales. También es posible seleccionar condiciones tales como la ip de las máquinas a las que se les solicitará autenticación. En este caso se seleccionó esa opción y se ingresó la IP de la máquina kali tal como se muestra en la figura 6.
@@ -49,7 +49,7 @@ Luego, dentro de esa opción se debe habilitar Auth y elegir el método de auten
 <p align="center">
   <img src="images/auth_config_resaltado.png" alt="Ventana de configuración Auth de SafeLine WAF con las opciones activas resaltadas en rojo" width="750">
   <br>
-  <em>Figura 6. Configuración del módulo Auth en SafeLine WAF con las opciones activas resaltadas en rojo.</em>
+  <em>Figura 6. Configuración del módulo Auth en SafeLine WAF con las opciones activas.</em>
 </p>
 
 Si ahora se navega hacia la aplicación web, se verá una pestaña como la siguiente, donde el WAF solo solicitará la página en el back-end si se proporcionan las credenciales correctas (las que se configuraron anteriormente).
