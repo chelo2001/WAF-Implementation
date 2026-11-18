@@ -35,4 +35,4 @@ Proteger una aplicación web vulnerable con un WAF y evaluar la eficacia de sus 
 
 ## 👤 Autor
 
-**Marcelo Cerda Zamora**
+**Marcelo Cerda Muñoz**
